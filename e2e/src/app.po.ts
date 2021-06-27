@@ -2,7 +2,7 @@ import { browser, by, element } from 'protractor';
 
 export class AppPage {
   navigateTo() {
-    return browser.get('/https://class.digiisocial.com/anz/?demo');
+    return browser.get('/');
   }
 
   getParagraphText() {

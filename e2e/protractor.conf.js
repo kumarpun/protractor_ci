@@ -16,7 +16,7 @@ exports.config = {
   },
   directConnect: true,
   directConnect: true,
-  baseUrl: 'https://class.digiisocial.com/anz/?demo',
+  baseUrl: 'localhost:433333333',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
