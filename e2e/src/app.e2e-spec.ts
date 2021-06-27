@@ -1,5 +1,4 @@
 import { AppPage } from './app.po';
-import { browser, ExpectedConditions } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -10,6 +9,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    browser.wait(ExpectedConditions.visibilityOf(page.getParagraphText()));
-  })
+    expect(page.getParagraphText()).toEqual('Log In');
+  });
 });
