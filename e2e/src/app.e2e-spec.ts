@@ -36,8 +36,8 @@ fdescribe('Post Section', () => {
 
     it('Verify user can post a text on fail', async () => {
 
-      await app.login.textAreaForPost.sendKeys('hello');
-         await app.login.PostButton1.click();
+      await app.login.textAreaForPost.sendKeys('hello again');
+         await app.login.PostButton.click();
          browser.sleep(5000);
          
       });
