@@ -80,4 +80,8 @@ export class LoginPage {
 public get textAreaForPost(): ElementFinder {
     return element(by.xpath('//*[@id="newTextInput"]'));
   }
+  public get PostButton1(): ElementFinder {
+    return element(by.xpath("//button[contains (text(), 'POST567bj')]"));
+    
+}
 }
