@@ -28,7 +28,7 @@ fdescribe('Post Section', () => {
 
    it('Verify user can post a text on messageboard', async () => {
 
-    await app.login.textAreaForPost.sendKeys('helloooo from automation');
+    await app.login.textAreaForPost.sendKeys('helloooo from github action');
        await app.login.PostButton.click();
        browser.sleep(5000);
        
