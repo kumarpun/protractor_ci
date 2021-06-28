@@ -6,6 +6,6 @@ export class AppPage {
   }
 
   getParagraphText() {
-    return element(by.xpath("//h1[contains(text(),'Log In')]"));
+    return element(by.xpath('app-root h1')).getText();
   }
 }
