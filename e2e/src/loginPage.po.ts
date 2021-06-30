@@ -11,7 +11,7 @@ export class LoginPage {
   public async navigateTo(): Promise<any> {
 
     await browser.waitForAngularEnabled(false);
-    return browser.get('https://class.digiisocial.com/anz/?demo');
+    return browser.get('');
   }
 
   // public async getEmailText(): Promise<any> {
