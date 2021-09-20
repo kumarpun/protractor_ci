@@ -21,7 +21,7 @@ export class LoginPage {
   //   const searchSchool = this.searchSchool();
   //   await searchSchool.clear();
   //   await searchSchool.sendKeys(text);
-  // }
+  //  }
 
   public async setSchool(text: string): Promise<any> {
     browser.sleep(5000);
