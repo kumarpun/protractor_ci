@@ -29,6 +29,8 @@ fdescribe('Post Section', () => {
 
 
     it('Verify user can post again', async () => {
+            await browser.waitForAngularEnabled(false);
+
       await app.login.textAreaForPost.sendKeys('hello again');
          await app.login.PostButton.click();
          browser.sleep(5000);
