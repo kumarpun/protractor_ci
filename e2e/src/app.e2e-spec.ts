@@ -9,6 +9,7 @@ fdescribe('Post Section', () => {
 
     beforeEach(async () => {
         app = new AppPage();
+        browser.ignoreSynchronization = false;
         await app.login.navigateTo();
         await app.login.setSchool(app.users[0].school);
         browser.sleep(5000);
