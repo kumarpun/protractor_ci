@@ -25,6 +25,7 @@ exports.config = {
     print: function() {}
   },
   onPrepare() {
+    browser.manage().timeouts().implicitlyWait(1000);
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.e2e.json')
     });
