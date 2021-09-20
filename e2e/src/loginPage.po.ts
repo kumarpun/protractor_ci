@@ -24,6 +24,7 @@ export class LoginPage {
   // }
 
   public async setSchool(text: string): Promise<any> {
+    browser.sleep(5000);
     const schoolInput = this.schoolInput();
     // await schoolInput.click();
     await schoolInput.sendKeys(text);
