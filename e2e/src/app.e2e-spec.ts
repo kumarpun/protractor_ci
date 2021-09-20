@@ -26,13 +26,6 @@ fdescribe('Post Section', () => {
 
 })
 
-  //  it('Verify user can post a text on messageboard test', async () => {
-
-  //   await app.login.textAreaForPost.sendKeys('helloooo from github action');
-  //      await app.login.PostButton.click();
-  //      browser.sleep(5000);
-       
-  //   });
 
     it('Verify user can post again', async () => {
       await app.login.textAreaForPost.sendKeys('hello again');
