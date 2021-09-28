@@ -4,7 +4,7 @@ import { async } from '@angular/core/testing';
 import { triggerAsyncId } from 'async_hooks';
 import { protractor } from 'protractor/built/ptor';
 
-fdescribe('Post Section', () => {
+describe('Post Section', () => {
     let app = new AppPage();
 
     beforeEach(async () => {
@@ -19,7 +19,6 @@ fdescribe('Post Section', () => {
         await app.login.SelectGroup.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.login.emailInput()), 10000));
         await app.validLogin(app.users[0].email, app.users[0].password);
-        await (browser.wait(ExpectedConditions.visibilityOf(app.login.textAreaForPost)));
 
         // browser.manage().timeouts().implicitlyWait(1000);
     
@@ -28,9 +27,8 @@ fdescribe('Post Section', () => {
 })
 
 
-    it('Verify user can post again', async () => {
-            await browser.waitForAngularEnabled(false);
-
+    fit('Verify user can post again', async () => {
+        await (browser.wait(ExpectedConditions.visibilityOf(app.login.textAreaForPost)));
       await app.login.textAreaForPost.sendKeys('hello again');
          await app.login.PostButton.click();
          browser.sleep(5000);

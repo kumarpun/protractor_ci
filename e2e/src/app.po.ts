@@ -14,7 +14,7 @@ export interface AutomationUserForTeacher {
 }
 export class AppPage {
   public users: AutomationUser[] = [
-    { school:'St Production', email: 'kumar', password: 'qwertyuiop' },
+    { school:'St Production', email: 'kumar1', password: 'qwertyuiop' },
   ];
 
   public login = new LoginPage();
